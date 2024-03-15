@@ -1,0 +1,31 @@
+/* FOODS */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* ECOOMMERCE CAMPUS */
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
+
+:root{
+    /* FOODS */
+    --first-color: #1b1b1f;
+    --second-color: #ffffff;
+    --third-color: #1e1d2b; /* BODY */
+    --fourth-color: #000000;
+    --fifth-color: #ffefe8;
+    --sixth-color: #2c2b47; /* MENU MOVIL */
+
+    --primary-font:'Poppins', sans-serif;
+
+    /* ECOMMERCE CAMPUS */
+    --ecolor-50: #fff5ec;
+    --ecolor-100: #ffe7d2;
+    --ecolor-200: #ffcca4;
+    --ecolor-300: #ffa86b;
+    --ecolor-400: #ff772f;
+    --ecolor-500: #ff5107;
+    --ecolor-600: #f93400;
+    --ecolor-700: #cc2200;
+    --ecolor-800: #a31d09;
+    --ecolor-900: #831b0b;
+    --ecolor-950: #470a03;
+
+    --secundary-font:"Madimi One", sans-serif;
+}
