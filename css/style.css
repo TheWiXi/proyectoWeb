@@ -16,7 +16,18 @@ body{
 .orange{
     color: var(--first-color);
 }
-
+.main__menu a:hover{ 
+    color: var(--first-color);
+    border-color: var(--first-color);
+}
+a {
+    color: var(--second-color);
+}
+a:hover{ 
+    color: var(--first-color);
+    border: 1px solid var(--first-color);
+    padding-top: 5%;
+}
 /* HEADER */
 
 header{
@@ -52,7 +63,6 @@ header{
 }
 .main__menu a{
     text-decoration: none;
-    color: var(--second-color);
     font-size: 1em;
 }
 
@@ -62,6 +72,7 @@ header{
 
 .home__content{
     margin-top: 10%;
+    padding-top: 10%;
     padding-left: 10%;
     padding-right: 10%;
     margin-bottom: 10%;
@@ -102,7 +113,8 @@ header{
 /*SECOND SECTION*/
 
 .about__content{
-    margin-top: 20%;
+    margin-top: 10%;
+    padding-top: 10%;
     padding-left: 8%;
     padding-right: 8%;
     margin-bottom: 10%;
@@ -303,12 +315,14 @@ header{
 }
 .footer__content a{
     text-decoration: none;
-    color: var(--second-color);
     font-size: .9em;
 
 }
 .orange i{
-    font-size: 1.5em;
+    font-size: 1.8em;
+}
+.orange a{
+    color: var(--first-color);
 }
 #social{
     margin-top: 8%;
