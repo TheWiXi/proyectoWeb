@@ -46,6 +46,7 @@ aside{
     gap: 1em;
 }
 .category__button{
+    width: 100%;
     background-color: transparent;
     border: 0;
     padding: 1em;
@@ -58,6 +59,7 @@ aside{
     align-items: center;
 }
 .category__button.active{
+    width: 100%;
     background-color: var(--ecolor-50);
     color: var(--ecolor-950);
     width: 100%;
@@ -117,8 +119,14 @@ main{
     gap: 1em;
     grid-template-columns: repeat(4, 1fr);
 }
+.product{
+    display: flex;
+    flex-direction: column;
+}
 .product__img{
     max-width: 100%;
+    max-height: 400px;
+    min-height: 400px;
     border-radius: 1em;
 }
 .product__description{
