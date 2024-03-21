@@ -29,7 +29,7 @@
                         <button class="category__button"><i class="bi bi-hand-index"></i>Pantalones</button>
                     </li>
                     <li>
-                        <a class="category__button cart__button active" href="/views/carrito.html"><i class="bi bi-cart-fill"></i>Carrito <span class="counting__cart">0</span></a>
+                        <a class="category__button cart__button active" href="/views/carrito.html"><i class="bi bi-cart-fill"></i>Carrito <span class="counting__cart">33</span></a>
                     </li>
                 </ul>
             </nav>
@@ -44,7 +44,7 @@
             <h2 class="main__tittle">Carrito</h2>
             <div class="cart__container">
                 <p class="empty__cart">Tu carrito esta vacío. <i class="bi bi-emoji-frown"></i></p>
-                <div class="cart__list">
+                <div class="cart__list disabled">
                     <div class="cart__product">
                         <img class="cart__product__img" src="/storage/default.jpg" alt="">
                         <div class="cart__product__tittle">
@@ -86,9 +86,9 @@
                         <button class="cart__product__delete"><i class="bi bi-trash-fill"></i></button>
                     </div>
                 </div>
-                <div class="actions">
+                <div class="actions disabled">
                     <div class="actions__left">
-                        <button class="actions__empty__cart"></button>
+                        <button class="actions__empty__cart">Vaciar Carrito</button>
                     </div>
                     <div class="actions__right">
                         <div class="actions__total">
@@ -98,6 +98,7 @@
                         <button class="actions__buy">Comprar ahora</button>
                     </div>
                 </div>
+                <p class="buy__cart disabled">Mechas gracias por tu compra ! <i class="bi bi-emoji-wink"></i></p>
             </div>
         </main>
     </div>

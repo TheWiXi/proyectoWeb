@@ -149,3 +149,98 @@ main{
     background-color: var(--ecolor-950);
     color: var(--ecolor-50);
 }
+
+
+/* CARRITO */
+
+.cart__container{
+    display: flex;
+    flex-direction: column;
+    gap: 2.5em;
+}
+.empty__cart, .buy__cart{
+    color: var(--ecolor-950);
+}
+.cart__list{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.cart__product{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--ecolor-100);   
+    color: var(--ecolor-950);
+    padding: .5em;
+    border-radius: 1em;
+}
+.cart__product__img{
+    width: 4em;
+    border-radius: 1em;
+}
+.cart__product small{
+    font-size: .9em;
+}
+.cart__product__delete{
+    border: none;
+    background-color: transparent;
+    color: var(--ecolor-950);    
+    cursor: pointer;
+}
+
+.actions{
+    display: flex;
+    justify-content: space-between;
+}
+.actions__empty__cart{
+    border: 0;
+    border-radius: 1em;
+    color: var(--ecolor-950);    
+    background-color: var(--ecolor-100);    
+    padding: 1em;
+    text-transform: uppercase;
+    cursor: pointer;
+    
+}
+.actions__buy{
+    border: 0;
+    border-top-right-radius: 1em;
+    border-bottom-right-radius: 1em;
+    color: var(--ecolor-100);    
+    background-color: var(--ecolor-950);    
+    padding: 1em;
+    text-transform: uppercase;
+    cursor: pointer;
+    
+}
+.actions__right{
+    display: flex;
+}
+.actions__total{
+    display: flex;
+    align-items: center;
+    border: 0;
+    border-top-left-radius: 1em;
+    border-bottom-left-radius: 1em;
+    color: var(--ecolor-950);    
+    background-color: var(--ecolor-100);    
+    padding: 1em;
+    text-transform: uppercase;
+}
+.counting__cart{
+    background-color: var(--ecolor-100);
+    color: var(--ecolor-950);
+    padding: .15em .3em;
+    border-radius: .4em;
+}
+.cart__button.active .counting__cart{
+    background-color: var(--ecolor-950);
+    color: var(--ecolor-100);
+    padding: .15em .3em;
+    border-radius: .4em;
+}
+
+.disabled{
+    display: none;
+}
