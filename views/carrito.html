@@ -29,7 +29,7 @@
                         <button class="category__button"><i class="bi bi-hand-index"></i>Pantalones</button>
                     </li>
                     <li>
-                        <a class="category__button cart__button active" href="/views/carrito.html"><i class="bi bi-cart-fill"></i>Carrito <span class="counting__cart">33</span></a>
+                        <a class="category__button cart__button active" href="/views/carrito.html"><i class="bi bi-cart-fill"></i>Carrito <span class="counting__cart">2</span></a>
                     </li>
                 </ul>
             </nav>
@@ -44,49 +44,29 @@
             <h2 class="main__tittle">Carrito</h2>
             <div class="cart__container">
                 <p class="empty__cart">Tu carrito esta vacío. <i class="bi bi-emoji-frown"></i></p>
-                <div class="cart__list disabled">
+                <div class="cart__list disabled" id="cart__list">
                     <div class="cart__product">
-                        <img class="cart__product__img" src="/storage/default.jpg" alt="">
+                        <img class="cart__product__img" src="/storage/img/pantalones/05.webp" alt="">
                         <div class="cart__product__tittle">
                             <small>Nombre</small>
-                            <h3>Producto 1</h3>
+                            <h3>Pantalon Camuflado, De Bolsillos 100% Dreal</h3>
                         </div>
                         <div class="cart__product__cant">
                             <small>Cantidad</small>
-                            <p>1</p>
+                            <p>2</p>
                         </div>
                         <div class="cart__product__price">
                             <small>Precio</small>
-                            <p>$100.000</p>
+                            <p>$10000</p>
                         </div>
                         <div class="cart__product__subtotal">
                             <small>subtotal</small>
-                            <p>$100.000</p>
-                        </div>
-                        <button class="cart__product__delete"><i class="bi bi-trash-fill"></i></button>
-                    </div>
-                    <div class="cart__product">
-                        <img class="cart__product__img" src="/storage/default.jpg" alt="">
-                        <div class="cart__product__tittle">
-                            <small>Nombre</small>
-                            <h3>Producto 1</h3>
-                        </div>
-                        <div class="cart__product__cant">
-                            <small>Cantidad</small>
                             <p>1</p>
                         </div>
-                        <div class="cart__product__price">
-                            <small>Precio</small>
-                            <p>$100.000</p>
-                        </div>
-                        <div class="cart__product__subtotal">
-                            <small>subtotal</small>
-                            <p>$100.000</p>
-                        </div>
-                        <button class="cart__product__delete"><i class="bi bi-trash-fill"></i></button>
+                        <button class="cart__product__delete" ><i class="bi bi-trash-fill"></i></button>
                     </div>
                 </div>
-                <div class="actions disabled">
+                <div class="actions disabled" id="actions">
                     <div class="actions__left">
                         <button class="actions__empty__cart">Vaciar Carrito</button>
                     </div>
@@ -98,9 +78,12 @@
                         <button class="actions__buy">Comprar ahora</button>
                     </div>
                 </div>
-                <p class="buy__cart disabled">Mechas gracias por tu compra ! <i class="bi bi-emoji-wink"></i></p>
+                <p class="buy__cart disabled" id="buy__cart">Mechas gracias por tu compra ! <i class="bi bi-emoji-wink"></i></p>
             </div>
         </main>
     </div>
+    <script src="/js/main.js"></script>
+    <script src="/js/modules/carrito.js"></script>
+
 </body>
 </html>

@@ -148,18 +148,26 @@ const products = [
         "imagen": "/storage/img/pantalones/05.webp",
         "precio": 89990,
         "id": "Pantalón 05",
-        categoria: {
-            nombre: "Pantalones",
-            id: "pantalones"
+        "categoria": {
+            "nombre": "Pantalones",
+            "id": "pantalones"
         }
     }
 ];
 
 const productGallery = document.querySelector("#product__gallery");
 const buttonsMenu = document.querySelectorAll(".category__button");
+const mainTitlle = document.querySelector("#main__tittle");
+let addButtons = document.querySelectorAll(".product__add");
+const countingCart = document.querySelector("#counting__cart")
 
-function uploadProducts(){
-    products.forEach(product=>{
+
+
+function uploadProducts(chooseProduct){
+
+    productGallery.innerHTML="";
+    
+    chooseProduct.forEach(product=>{
         const div = document.createElement("div");
         div.classList.add("product")
         div.innerHTML = `
@@ -167,18 +175,67 @@ function uploadProducts(){
             <div class="product__description">
                 <h3 class="product__tittle">${product.nombre}</h3>
                 <p class="product__cost">$${product.precio}</p>
-                <button class="product__add">Agregar</button>
+                <button class="product__add" id="${product.id}">Agregar</button>
             </div>
         `;
         productGallery.append(div);
     })
+    updateButtonsAdd();
 }
 
-uploadProducts();
+uploadProducts(products);
 
 buttonsMenu.forEach(button => {
     button.addEventListener("click",(e) =>{
         buttonsMenu.forEach(button => button.classList.remove("active"))
         e.currentTarget.classList.add("active");
+
+        if (e.currentTarget.id != "all") {
+            const category = products.find(product => product.categoria.id === e.currentTarget.id)
+            mainTitlle.innerText = category.categoria.nombre;
+            const chooseProduct = products.filter(product => product.categoria.id === e.currentTarget.id);
+            uploadProducts(chooseProduct);
+        }
+        else{
+            mainTitlle.innerText = "Todos los productos."
+            uploadProducts(products);
+        }
+        
     })
 })
+
+function updateButtonsAdd() {
+    addButtons=document.querySelectorAll(".product__add");
+    
+    addButtons.forEach(button => {
+        button.addEventListener("click", addCart)
+    })
+}
+
+// let productsCart;
+// const productsCartLS= JSON.parse(localStorage.getItem("productsInCart"));
+// if (productsCart){
+//     productsCart=productsCartLS;
+//     updateCounting();
+// }
+productsCart=[];
+
+function addCart(e) {
+    const idButton = e.currentTarget.id;
+    const productAdd = products.find(product => product.id === idButton);
+    if (productsCart.some(product => product.id === idButton)){
+        const index = productsCart.findIndex(product => product.id === idButton);
+        productsCart[index].cantidad++;
+    }
+    else{
+        productAdd.cantidad = 1
+        productsCart.push(productAdd);
+    }
+    updateCounting();
+    
+    localStorage.setItem("productsInCart", JSON.stringify(productsCart))
+}
+function updateCounting(){
+    let newCounting = productsCart.reduce((acc, product) => acc + product.cantidad, 0);
+    countingCart.innerText = newCounting;
+}
