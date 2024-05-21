@@ -3,7 +3,7 @@ const products = [
     // Abrigos
     {
         "nombre": "Chaqueta Impermeable En Gabán Para Dama 'Azul'",
-        "imagen": "/storage/img/abrigos/01.webp",
+        "imagen": "storage/img/abrigos/01.webp",
         "precio": 93900,
         "id": "abrigo-01",
         categoria: {
@@ -13,7 +13,7 @@ const products = [
     },
     {
         "nombre": "Chaqueta Impermeable En Gabán Para Dama 'Negro'",
-        "imagen": "/storage/img/abrigos/02.webp",
+        "imagen": "storage/img/abrigos/02.webp",
         "precio": 93900,
         "id": "abrigo-02",
         categoria: {
@@ -23,7 +23,7 @@ const products = [
     },
     {
         "nombre": "Chaqueta Impermeable En Gabán Para Dama 'Blanco'",
-        "imagen": "/storage/img/abrigos/03.webp",
+        "imagen": "storage/img/abrigos/03.webp",
         "precio": 93900,
         "id": "abrigo-03",
         categoria: {
@@ -33,7 +33,7 @@ const products = [
     },
     {
         "nombre": "Chaqueta Hombre Cuero Sintético",
-        "imagen": "/storage/img/abrigos/04.webp",
+        "imagen": "storage/img/abrigos/04.webp",
         "precio": 102000,
         "id": "abrigo-04",
         categoria: {
@@ -43,7 +43,7 @@ const products = [
     },
     {
         "nombre": "Calidad Chaqueta Hombre Algodon Colombiano Buso Ropa Buzos",
-        "imagen": "/storage/img/abrigos/05.webp",
+        "imagen": "storage/img/abrigos/05.webp",
         "precio": 77900,
         "id": "abrigo-05",
         categoria: {
@@ -54,7 +54,7 @@ const products = [
     // Camisetas
     {
         "nombre": "Camiseta De Compresión En Licra Uv Slim.",
-        "imagen": "/storage/img/camisetas/01.webp",
+        "imagen": "storage/img/camisetas/01.webp",
         "precio": 38000,
         "id": "Camiseta 01",
         categoria: {
@@ -64,7 +64,7 @@ const products = [
     },
     {
         "nombre": "Camiseta Tipo Polo Color Dama Mujer.",
-        "imagen": "/storage/img/camisetas/02.webp",
+        "imagen": "storage/img/camisetas/02.webp",
         "precio": 26255,
         "id": "Camiseta 02",
         categoria: {
@@ -74,7 +74,7 @@ const products = [
     },
     {
         "nombre": "Camiseta Deportiva, Crossfit, Gym, Ejercicios Al Aire Libre.",
-        "imagen": "/storage/img/camisetas/03.webp",
+        "imagen": "storage/img/camisetas/03.webp",
         "precio": 29900,
         "id": "Camiseta 03",
         categoria: {
@@ -84,7 +84,7 @@ const products = [
     },
     {
         "nombre": "Camisetas Bandas De Rock Metal Heavy Riffs.",
-        "imagen": "/storage/img/camisetas/04.webp",
+        "imagen": "storage/img/camisetas/04.webp",
         "precio": 32850,
         "id": "Camiseta 04",
         categoria: {
@@ -94,7 +94,7 @@ const products = [
     },
     {
         "nombre": "Camiseta Anime Nezuko Kamado Kimetsu No Yaiba Demon Slayer",
-        "imagen": "/storage/img/camisetas/05.webp",
+        "imagen": "storage/img/camisetas/05.webp",
         "precio": 29900,
         "id": "Camiseta 05",
         categoria: {
@@ -105,7 +105,7 @@ const products = [
     // Pantalones
     {
         "nombre": "Pantalon En Dril Licrado Para Hombre.",
-        "imagen": "/storage/img/pantalones/01.webp",
+        "imagen": "storage/img/pantalones/01.webp",
         "precio": 58900,
         "id": "Pantalón 01",
         categoria: {
@@ -115,7 +115,7 @@ const products = [
     },
     {
         "nombre": "Pantalón Camuflado Hermoso.",
-        "imagen": "/storage/img/pantalones/02.webp",
+        "imagen": "storage/img/pantalones/02.webp",
         "precio": 104405,
         "id": "Pantalón 02",
         categoria: {
@@ -125,7 +125,7 @@ const products = [
     },
     {
         "nombre": "Pantalón Jogger Cargo, Táctico, Militar.",
-        "imagen": "/storage/img/pantalones/03.webp",
+        "imagen": "storage/img/pantalones/03.webp",
         "precio": 104500,
         "id": "Pantalón 03",
         categoria: {
@@ -135,7 +135,7 @@ const products = [
     },
     {
         "nombre": "Pantalón Jeans De Colores Entubado Para Hombre.",
-        "imagen": "/storage/img/pantalones/04.webp",
+        "imagen": "storage/img/pantalones/04.webp",
         "precio": 61750,
         "id": "Pantalón 04",
         categoria: {
@@ -145,7 +145,7 @@ const products = [
     },
     {
         "nombre": "Pantalon Camuflado, De Bolsillos 100% Dreal",
-        "imagen": "/storage/img/pantalones/05.webp",
+        "imagen": "storage/img/pantalones/05.webp",
         "precio": 89990,
         "id": "Pantalón 05",
         "categoria": {
